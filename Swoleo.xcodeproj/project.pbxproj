@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50D7D96F26D53987006D275D /* SwoleoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7D96E26D53987006D275D /* SwoleoApp.swift */; };
+		50D7D97126D53987006D275D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7D97026D53987006D275D /* ContentView.swift */; };
+		50D7D97326D5399F006D275D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D7D97226D5399F006D275D /* Assets.xcassets */; };
+		50D7D97626D5399F006D275D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D7D97526D5399F006D275D /* Preview Assets.xcassets */; };
+		50D7D97826D5399F006D275D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7D97726D5399F006D275D /* Persistence.swift */; };
+		50D7D97B26D5399F006D275D /* Swoleo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50D7D97926D5399F006D275D /* Swoleo.xcdatamodeld */; };
+		50D7D98626D539A0006D275D /* SwoleoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7D98526D539A0006D275D /* SwoleoTests.swift */; };
+		50D7D99126D539A0006D275D /* SwoleoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7D99026D539A0006D275D /* SwoleoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50D7D98226D539A0006D275D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D7D96326D53987006D275D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50D7D96A26D53987006D275D;
+			remoteInfo = Swoleo;
+		};
+		50D7D98D26D539A0006D275D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D7D96326D53987006D275D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50D7D96A26D53987006D275D;
+			remoteInfo = Swoleo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50D7D96B26D53987006D275D /* Swoleo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swoleo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D7D96E26D53987006D275D /* SwoleoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwoleoApp.swift; sourceTree = "<group>"; };
+		50D7D97026D53987006D275D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50D7D97226D5399F006D275D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50D7D97526D5399F006D275D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50D7D97726D5399F006D275D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		50D7D97A26D5399F006D275D /* Swoleo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swoleo.xcdatamodel; sourceTree = "<group>"; };
+		50D7D97C26D5399F006D275D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D7D98126D539A0006D275D /* SwoleoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwoleoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D7D98526D539A0006D275D /* SwoleoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwoleoTests.swift; sourceTree = "<group>"; };
+		50D7D98726D539A0006D275D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D7D98C26D539A0006D275D /* SwoleoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwoleoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D7D99026D539A0006D275D /* SwoleoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwoleoUITests.swift; sourceTree = "<group>"; };
+		50D7D99226D539A0006D275D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50D7D96826D53987006D275D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D7D97E26D539A0006D275D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D7D98926D539A0006D275D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50D7D96226D53987006D275D = {
+			isa = PBXGroup;
+			children = (
+				50D7D96D26D53987006D275D /* Swoleo */,
+				50D7D98426D539A0006D275D /* SwoleoTests */,
+				50D7D98F26D539A0006D275D /* SwoleoUITests */,
+				50D7D96C26D53987006D275D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50D7D96C26D53987006D275D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D7D96B26D53987006D275D /* Swoleo.app */,
+				50D7D98126D539A0006D275D /* SwoleoTests.xctest */,
+				50D7D98C26D539A0006D275D /* SwoleoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50D7D96D26D53987006D275D /* Swoleo */ = {
+			isa = PBXGroup;
+			children = (
+				50D7D96E26D53987006D275D /* SwoleoApp.swift */,
+				50D7D97026D53987006D275D /* ContentView.swift */,
+				50D7D97226D5399F006D275D /* Assets.xcassets */,
+				50D7D97726D5399F006D275D /* Persistence.swift */,
+				50D7D97C26D5399F006D275D /* Info.plist */,
+				50D7D97926D5399F006D275D /* Swoleo.xcdatamodeld */,
+				50D7D97426D5399F006D275D /* Preview Content */,
+			);
+			path = Swoleo;
+			sourceTree = "<group>";
+		};
+		50D7D97426D5399F006D275D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50D7D97526D5399F006D275D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50D7D98426D539A0006D275D /* SwoleoTests */ = {
+			isa = PBXGroup;
+			children = (
+				50D7D98526D539A0006D275D /* SwoleoTests.swift */,
+				50D7D98726D539A0006D275D /* Info.plist */,
+			);
+			path = SwoleoTests;
+			sourceTree = "<group>";
+		};
+		50D7D98F26D539A0006D275D /* SwoleoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50D7D99026D539A0006D275D /* SwoleoUITests.swift */,
+				50D7D99226D539A0006D275D /* Info.plist */,
+			);
+			path = SwoleoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50D7D96A26D53987006D275D /* Swoleo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D7D99526D539A0006D275D /* Build configuration list for PBXNativeTarget "Swoleo" */;
+			buildPhases = (
+				50D7D96726D53987006D275D /* Sources */,
+				50D7D96826D53987006D275D /* Frameworks */,
+				50D7D96926D53987006D275D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swoleo;
+			productName = Swoleo;
+			productReference = 50D7D96B26D53987006D275D /* Swoleo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50D7D98026D539A0006D275D /* SwoleoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D7D99826D539A0006D275D /* Build configuration list for PBXNativeTarget "SwoleoTests" */;
+			buildPhases = (
+				50D7D97D26D539A0006D275D /* Sources */,
+				50D7D97E26D539A0006D275D /* Frameworks */,
+				50D7D97F26D539A0006D275D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50D7D98326D539A0006D275D /* PBXTargetDependency */,
+			);
+			name = SwoleoTests;
+			productName = SwoleoTests;
+			productReference = 50D7D98126D539A0006D275D /* SwoleoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50D7D98B26D539A0006D275D /* SwoleoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50D7D99B26D539A0006D275D /* Build configuration list for PBXNativeTarget "SwoleoUITests" */;
+			buildPhases = (
+				50D7D98826D539A0006D275D /* Sources */,
+				50D7D98926D539A0006D275D /* Frameworks */,
+				50D7D98A26D539A0006D275D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50D7D98E26D539A0006D275D /* PBXTargetDependency */,
+			);
+			name = SwoleoUITests;
+			productName = SwoleoUITests;
+			productReference = 50D7D98C26D539A0006D275D /* SwoleoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50D7D96326D53987006D275D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					50D7D96A26D53987006D275D = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					50D7D98026D539A0006D275D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 50D7D96A26D53987006D275D;
+					};
+					50D7D98B26D539A0006D275D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 50D7D96A26D53987006D275D;
+					};
+				};
+			};
+			buildConfigurationList = 50D7D96626D53987006D275D /* Build configuration list for PBXProject "Swoleo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50D7D96226D53987006D275D;
+			productRefGroup = 50D7D96C26D53987006D275D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50D7D96A26D53987006D275D /* Swoleo */,
+				50D7D98026D539A0006D275D /* SwoleoTests */,
+				50D7D98B26D539A0006D275D /* SwoleoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50D7D96926D53987006D275D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D7D97626D5399F006D275D /* Preview Assets.xcassets in Resources */,
+				50D7D97326D5399F006D275D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D7D97F26D539A0006D275D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D7D98A26D539A0006D275D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50D7D96726D53987006D275D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D7D97B26D5399F006D275D /* Swoleo.xcdatamodeld in Sources */,
+				50D7D97826D5399F006D275D /* Persistence.swift in Sources */,
+				50D7D97126D53987006D275D /* ContentView.swift in Sources */,
+				50D7D96F26D53987006D275D /* SwoleoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D7D97D26D539A0006D275D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D7D98626D539A0006D275D /* SwoleoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D7D98826D539A0006D275D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D7D99126D539A0006D275D /* SwoleoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50D7D98326D539A0006D275D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50D7D96A26D53987006D275D /* Swoleo */;
+			targetProxy = 50D7D98226D539A0006D275D /* PBXContainerItemProxy */;
+		};
+		50D7D98E26D539A0006D275D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50D7D96A26D53987006D275D /* Swoleo */;
+			targetProxy = 50D7D98D26D539A0006D275D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50D7D99326D539A0006D275D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50D7D99426D539A0006D275D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50D7D99626D539A0006D275D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Swoleo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Swoleo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ps.sami.Swoleo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50D7D99726D539A0006D275D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Swoleo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Swoleo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ps.sami.Swoleo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50D7D99926D539A0006D275D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwoleoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ps.sami.SwoleoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swoleo.app/Swoleo";
+			};
+			name = Debug;
+		};
+		50D7D99A26D539A0006D275D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwoleoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ps.sami.SwoleoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swoleo.app/Swoleo";
+			};
+			name = Release;
+		};
+		50D7D99C26D539A0006D275D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwoleoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ps.sami.SwoleoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Swoleo;
+			};
+			name = Debug;
+		};
+		50D7D99D26D539A0006D275D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwoleoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ps.sami.SwoleoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Swoleo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50D7D96626D53987006D275D /* Build configuration list for PBXProject "Swoleo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D7D99326D539A0006D275D /* Debug */,
+				50D7D99426D539A0006D275D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D7D99526D539A0006D275D /* Build configuration list for PBXNativeTarget "Swoleo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D7D99626D539A0006D275D /* Debug */,
+				50D7D99726D539A0006D275D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D7D99826D539A0006D275D /* Build configuration list for PBXNativeTarget "SwoleoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D7D99926D539A0006D275D /* Debug */,
+				50D7D99A26D539A0006D275D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50D7D99B26D539A0006D275D /* Build configuration list for PBXNativeTarget "SwoleoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50D7D99C26D539A0006D275D /* Debug */,
+				50D7D99D26D539A0006D275D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		50D7D97926D5399F006D275D /* Swoleo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				50D7D97A26D5399F006D275D /* Swoleo.xcdatamodel */,
+			);
+			currentVersion = 50D7D97A26D5399F006D275D /* Swoleo.xcdatamodel */;
+			path = Swoleo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 50D7D96326D53987006D275D /* Project object */;
+}
