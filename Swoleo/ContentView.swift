@@ -9,70 +9,46 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
 
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
+    var placeholderDayArray = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6"]
+    
     var body: some View {
-        List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+        
+        NavigationView{
+            VStack(spacing: 30){
+                
+                Spacer()
+                
+                ScrollView(.horizontal, showsIndicators: false){
+                    HStack{
+                        ForEach(placeholderDayArray, id: \.self){ day in
+                            VStack{
+                                Button("\(day)"){
+                                    // Start Workout
+                                }.padding(85).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
+                            }
+                        }
+                    }
+                }
+                
+                
+                
+                Button("New Day"){
+                    //Go to new day view
+                }.padding(75).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
+                
+
+                Button("Live Day"){
+                    // go to live day view
+                }.padding(75).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
+                
+                Spacer()
             }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-            #if os(iOS)
-            EditButton()
-            #endif
-
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
-            }
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+            .navigationTitle("Swoleo").font(.headline)}
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
+   
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
