@@ -10,8 +10,10 @@ import CoreData
 
 struct ContentView: View {
 
-    var placeholderDayArray = ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6"]
+    @State private var placeholderDayArrayOdd = ["Day 1", "Day 3", "Day 5"]
+    @State private var placeholderDayArrayEven = ["Day 2", "Day 4", "Day 6"] // look into zipping these
     
+    // Next Steps: Figure out how to fix the button listings, then use the notes to abstract away the button style we want.
     var body: some View {
         
         NavigationView{
@@ -21,12 +23,15 @@ struct ContentView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false){
                     HStack{
-                        ForEach(placeholderDayArray, id: \.self){ day in
-
+                        ForEach(placeholderDayArrayOdd, id: \.self){ day in
+                            VStack{ // might need to make this a list instead of scroll + Stack
                                 Button("\(day)"){
                                     // Start Workout
-                                }.padding(85).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
- 
+                                }.padding(45).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
+                                Button("\(day)"){
+                                    // do smth
+                                }.padding(45).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
+                            }
                         }
                         Button("Placeholder"){
                             //This is the add new day button TODO: Change Style, add functionality
