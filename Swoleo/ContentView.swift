@@ -22,12 +22,15 @@ struct ContentView: View {
                 ScrollView(.horizontal, showsIndicators: false){
                     HStack{
                         ForEach(placeholderDayArray, id: \.self){ day in
-                            VStack{
+
                                 Button("\(day)"){
                                     // Start Workout
                                 }.padding(85).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
-                            }
+ 
                         }
+                        Button("Placeholder"){
+                            //This is the add new day button TODO: Change Style, add functionality
+                        }.padding(85).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
                     }
                 }
                 
