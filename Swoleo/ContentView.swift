@@ -13,11 +13,13 @@ struct ContentView: View {
     @State private var placeholderDayArrayTop = ["Day 1", "Day 3","Day 5 "] // use if else and null buttons, make lists same size
     @State private var placeholderDayArrayBot = ["Day 2", "Day 4", "Day 6"]
     
+    @State private var showingAddDay = false
+    
     // Next Steps: Figure out how to fix the button listings, then use the notes to abstract away the button style we want.
     var body: some View {
         
         NavigationView{
-            VStack(spacing: 30){
+            VStack(spacing: 20){
                 
                 Spacer()
                 
@@ -28,38 +30,42 @@ struct ContentView: View {
                                 VStack{ // might need to make this a list instead of scroll + Stack
                                     Button("\(day)"){
                                         // Start Workout
-                                    }.padding(45).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
-
+                                    }.padding(45).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: FillStyle()).foregroundColor(.black)
+                                    
                                 }
                             }
-                        Spacer()}
+                            Spacer()}
                         HStack(alignment: .firstTextBaseline){
                             ForEach(placeholderDayArrayBot, id: \.self){ day in
                                 VStack{ // might need to make this a list instead of scroll + Stack
                                     Button("\(day)"){
                                         // Start Workout
-                                    }.padding(45).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
-                                        
+                                    }.padding(45).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: FillStyle()).foregroundColor(.black)
+                                    
                                 }
-                            
+                                
                             }
-                        
+                            
                             Spacer()}
                         
                     }
-                   
+                    
                 }
                 
                 
                 
                 Button("New Day"){
-                    //Go to new day view
-                }.padding(75).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
+                    self.showingAddDay = true
+                }.padding(75).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: FillStyle()).foregroundColor(.black)
+                .sheet(isPresented: $showingAddDay){
+                    AddDayView()
+                } // Add functionality to clear and then save as a day on exit
+                    
                 
-
+                
                 Button("Live Day"){
                     // go to live day view
-                }.padding(75).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/).foregroundColor(.black)
+                }.padding(75).background(Color.orange).clipShape(RoundedRectangle(cornerSize: CGSize(width: 15,height: 20)), style: FillStyle()).foregroundColor(.black)
                 
                 Spacer()
             }

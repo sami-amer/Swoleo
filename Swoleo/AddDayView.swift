@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct AddDayView: View {
+    @ObservedObject var workouts = Workouts()
+    @State private var showingAddWorkout = false
+    
+    func removeItems(at offsets: IndexSet) {
+        workouts.items.remove(atOffsets: offsets)
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                ForEach(workouts.items) { item in
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(item.name)
+                                .font(.headline)
+                            Text(item.type)
+                        }
+
+                        Spacer()
+                        Text("\(item.initialAmount) lbs")
+                    }
+                }.onDelete(perform: removeItems)
+            }.navigationBarItems(trailing:
+                                    Button(action: {
+                                        self.showingAddWorkout = true
+                                    }) {
+                                        Image(systemName: "plus")
+                                    }
+                                )
+            .navigationBarTitle("New Day")
+        }.sheet(isPresented: $showingAddWorkout){
+            AddWorkoutView(workouts: self.workouts)
+        }
     }
 }
 
