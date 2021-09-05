@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5088C8A126E52C8A00C98280 /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5088C8A026E52C8A00C98280 /* AddWorkoutView.swift */; };
+		5088C8A326E52C9A00C98280 /* AddDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5088C8A226E52C9A00C98280 /* AddDayView.swift */; };
+		5088C8A526E52FA000C98280 /* DayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5088C8A426E52FA000C98280 /* DayItem.swift */; };
+		5088C8A726E52FDE00C98280 /* WorkoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5088C8A626E52FDE00C98280 /* WorkoutItem.swift */; };
 		50D7D96F26D53987006D275D /* SwoleoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7D96E26D53987006D275D /* SwoleoApp.swift */; };
 		50D7D97126D53987006D275D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7D97026D53987006D275D /* ContentView.swift */; };
 		50D7D97326D5399F006D275D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D7D97226D5399F006D275D /* Assets.xcassets */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5088C8A026E52C8A00C98280 /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
+		5088C8A226E52C9A00C98280 /* AddDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDayView.swift; sourceTree = "<group>"; };
+		5088C8A426E52FA000C98280 /* DayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayItem.swift; sourceTree = "<group>"; };
+		5088C8A626E52FDE00C98280 /* WorkoutItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutItem.swift; sourceTree = "<group>"; };
 		50D7D96B26D53987006D275D /* Swoleo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swoleo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D7D96E26D53987006D275D /* SwoleoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwoleoApp.swift; sourceTree = "<group>"; };
 		50D7D97026D53987006D275D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +109,10 @@
 			children = (
 				50D7D96E26D53987006D275D /* SwoleoApp.swift */,
 				50D7D97026D53987006D275D /* ContentView.swift */,
+				5088C8A026E52C8A00C98280 /* AddWorkoutView.swift */,
+				5088C8A426E52FA000C98280 /* DayItem.swift */,
+				5088C8A626E52FDE00C98280 /* WorkoutItem.swift */,
+				5088C8A226E52C9A00C98280 /* AddDayView.swift */,
 				50D7D97226D5399F006D275D /* Assets.xcassets */,
 				50D7D97726D5399F006D275D /* Persistence.swift */,
 				50D7D97C26D5399F006D275D /* Info.plist */,
@@ -266,8 +278,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				50D7D97B26D5399F006D275D /* Swoleo.xcdatamodeld in Sources */,
+				5088C8A326E52C9A00C98280 /* AddDayView.swift in Sources */,
+				5088C8A126E52C8A00C98280 /* AddWorkoutView.swift in Sources */,
 				50D7D97826D5399F006D275D /* Persistence.swift in Sources */,
+				5088C8A526E52FA000C98280 /* DayItem.swift in Sources */,
 				50D7D97126D53987006D275D /* ContentView.swift in Sources */,
+				5088C8A726E52FDE00C98280 /* WorkoutItem.swift in Sources */,
 				50D7D96F26D53987006D275D /* SwoleoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
